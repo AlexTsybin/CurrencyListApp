@@ -1,7 +1,9 @@
 package com.alextsy.currencylistapp.ui.currencies
 
-import androidx.hilt.Assisted
-import androidx.lifecycle.*
+import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.switchMap
+import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import com.alextsy.currencylistapp.data.CurrencyRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -10,7 +12,7 @@ import javax.inject.Inject
 @HiltViewModel
 class CurrenciesViewModel @Inject constructor(
     private val repository: CurrencyRepository,
-    private val  state: SavedStateHandle
+    state: SavedStateHandle
 ) : ViewModel() {
 
     private val currentConvert = state.getLiveData(CURRENT_CONVERT, DEFAULT_CONVERT)
