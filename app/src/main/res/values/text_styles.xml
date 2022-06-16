@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Roboto regular, weight = 400, (normal)-->
+    <style name="mainText">
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--Roboto medium, weight = 500-->
+    <style name="mainText.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="mainText.Medium.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="mainText.Medium.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--Roboto regular, weight = 400, (normal)-->
+    <style name="middleText">
+        <item name="android:textColor">@color/middle_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--Roboto medium, weight = 500-->
+    <style name="middleText.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="middleText.Medium.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="middleText.Medium.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="middleText.Medium.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="secondaryText">
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--Roboto medium, weight = 500-->
+    <style name="secondaryText.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="secondaryText.Medium.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

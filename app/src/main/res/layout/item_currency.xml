@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_symbol"
+        style="@style/middleText.Medium.14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_image"
+        android:layout_alignBottom="@id/iv_image"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_toRightOf="@id/iv_image"
+        android:gravity="center_vertical"
+        tools:text="(BTC)" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/mainText.Medium.16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_symbol"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_toLeftOf="@id/tv_price"
+        android:layout_toRightOf="@id/tv_symbol"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Bitcoin" />
+
+    <TextView
+        android:id="@+id/tv_currency"
+        style="@style/secondaryText.Medium.16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_symbol"
+        android:layout_toLeftOf="@id/tv_price"
+        tools:text="$" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/secondaryText.Medium.16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_symbol"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/default_margin"
+        tools:text="27999.99" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/iv_image"
+        android:background="@color/divider_color" />
+</RelativeLayout>
